@@ -5,33 +5,41 @@
   <title>Maximo Prime</title>
   
   <!-- Link to CSS stylesheet for styling the page -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./css/style.css">
   
   <!-- Importing jQuery and custom JS script for changing the right section content -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/nav.js"></script>
 </head>
 <body>
-
-  <!-- Upper Navigation Bar -->
+<header>
+  TEST
   <nav class="topnav">
-    <a href="#" id="lang_en" class="active">Section 1</a>
-    <a href="#" id="lang_en">Section 2</a>
-    <a href="#" id="lang_en">Section 3</a>
+    <h2> LANGUAGE </h2>
+    <ul>
+      <li><a href="#" id="lang_en" class="active">Section 1</a></li>
+      <li><a href="#" id="lang_ch">Section 2</a></li>
+      <li><a href="#" id="lang_fr">Section 3</a></li>  
+    </ul>
   </nav>
-
+</header>
+  <!-- Upper Navigation Bar -->
+  
   <!-- Side Navigation Bar -->
   <div class="sidenav">
-    <a href="#">Home</a>
-    <a href="#">Contact</a>
-    <a href="#">About</a>
+    <a href="#" id="menu1">Home</a>
+    <a href="#" id="menu2">About</a>
+    <a href="#" id="menu3">Products/Services</a>
+    <a href="#" id="menu4">FAQ</a>      
+    <a href="#" id="menu5">Contact</a>
   </div>
 
   <!-- Right Content Section -->
-  <section class="right-section">
-    <h2>Welcome to Section 1</h2>
-    <p>Content for section 1 goes here...</p>
-  </section>
+  <div id="content">
+    <!-- The loaded HTML content will be placed here -->
+  </div>
+
 
 </body>
 </html>

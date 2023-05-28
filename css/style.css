@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700;800&display=swap');
+
+
+body {
+  background: linear-gradient(to bottom, #222222 40%, #333333 60%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color : #DDDDDD;
+  font-family: 'ZCOOL XiaoWei', 'Nanum Gothic', sans-serif;
+}
+
+#menu2 {
+  color: #568826;
+}
+
+nav a {
+    color: #DDDDDD;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+nav {
+    margin-right: 20px; /* adjust this value to your liking */
+}
+  
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 10px; /* adjust this value to your liking */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333; /* or any color of your choice */
+  }
+  
