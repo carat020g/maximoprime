@@ -1,15 +1,14 @@
-document.getElementById('menu1').style.color = '#568826';
 
 // Handle menu item click events
-document.getElementById('menu1').addEventListener('click', function() {
-    loadContent('about.html');
+document.getElementById('nav_how_we_work').addEventListener('click', function() {
+    loadContent('how-we-work.html');
   });
   
-  document.getElementById('menu2').addEventListener('click', function() {
-    loadContent('products.html');
-  });
+  // document.getElementById('mag').addEventListener('click', function() {
+  //   loadContent('products.html');
+  // });
   
-  document.getElementById('menu3').addEventListener('click', function() {
+  document.getElementById('nav_faq').addEventListener('click', function() {
     loadContent('faq.html');
   });
   

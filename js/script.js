@@ -1,5 +1,7 @@
 import languageOptions from './translations.js';
 
+// rest of your code using languageOptions
+
 // set default language to English
 let currentLanguage = 'en';
 
