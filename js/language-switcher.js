@@ -13,12 +13,26 @@ document.querySelectorAll('.topnav a').forEach((link) => {
     event.preventDefault();
     const selectedLanguage = link.id.slice(5); // Extract the language code from the link id
     // Import the translation file based on the selected language
-    import(`./translation-${selectedLanguage}.js`).then((translations) => {
-      // Update the current language translations
-      currentTranslations = translations.default;
-      // Update the text on the website to the current language
-      updateText();
-    });
+    switch (selectedLanguage) {
+      case 'en':
+        currentTranslations = enTranslations;
+        break;
+      case 'ch':
+        currentTranslations = chTranslations;
+        break;
+      case 'sp':
+        currentTranslations = spTranslations;
+        break;
+      case 'fr':
+        currentTranslations = frTranslations;
+        break;
+      case 'ge':
+        currentTranslations = geTranslations;
+        break;
+      default:
+        currentTranslations = enTranslations; // Default to English
+    }
+    updateText();    
   });
 });
 
