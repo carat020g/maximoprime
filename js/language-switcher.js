@@ -1,4 +1,5 @@
 let currentLanguage = 'en'; // Default language
+let currentFontClass = 'font-sans-pro'; // Default font class
 
 
 function loadCommon() {
@@ -30,6 +31,9 @@ function loadLanguage(language) {
   // Construct the path to the JSON file based on the language
   const filePath = './json/${language}.json';
 
+  // Set the font class based on the selected language
+  currentFontClass = language === 'ch' ? 'font-nato-sans-sc' : 'font-sans-pro';
+
   // Make an AJAX request to fetch the language JSON file
   const xhr = new XMLHttpRequest();
   xhr.overrideMimeType('application/json');
@@ -45,6 +49,15 @@ function loadLanguage(language) {
 }
 
 function updateText(translations) {
+  // Remove existing font classes from all elements
+  document.querySelectorAll('*').forEach((element) => {
+    element.classList.remove('font-sans-pro', 'font-nato-sans-sc');
+  });
+
+  // Add the current font class to all elements
+  document.querySelectorAll('*').forEach((element) => {
+    element.classList.add(currentFontClass);
+  });
   // Update the text content of elements using the translations object
   // Example: document.getElementById('elementId').textContent = translations.someText;
 }

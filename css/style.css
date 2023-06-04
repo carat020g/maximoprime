@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&family=Source+Sans+Pro:wght@300;700&display=swap');
 
+.font-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.font-nato-sans-sc {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
 body {
   background: linear-gradient(to bottom, #222222 40%, #333333 60%);
   background-repeat: no-repeat;
