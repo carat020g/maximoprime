@@ -1,4 +1,4 @@
-const languageOptions = {
+const howWeWorkLanguageOptions = {
     en: {
       businesstype: "Fullfillment and dropshipping business",
       header: {

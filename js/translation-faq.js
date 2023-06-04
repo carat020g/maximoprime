@@ -1,4 +1,4 @@
-const languageOptions = {
+const faqLanguageOptions = {
     en: {
         questions:{
            question1: "What kind of marketing or promotional support do you offer to promote sales?",
