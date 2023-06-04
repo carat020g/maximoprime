@@ -1,6 +1,4 @@
-/* Chinese */
-@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&family=Source+Sans+Pro:wght@300;700&display=swap');
 
 body {
   background: linear-gradient(to bottom, #222222 40%, #333333 60%);
