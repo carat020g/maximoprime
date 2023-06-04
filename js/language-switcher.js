@@ -29,7 +29,7 @@ function updateCommonText(commonTranslations) {
 
 function loadLanguage(language) {
   // Construct the path to the JSON file based on the language
-  const filePath = 'json/${language}.json';
+  const filePath = `json/${language}.json`;
 
   // Set the font class based on the selected language
   currentFontClass = language === 'ch' ? 'font-nato-sans-sc' : 'font-sans-pro';
