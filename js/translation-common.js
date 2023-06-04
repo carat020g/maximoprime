@@ -77,32 +77,31 @@ const languageOptions = {
     },        
   };
   
-  // Set default language to English
-  let currentLanguage = 'en';
   
-  // Listen for click events on language links
-  document.querySelectorAll('.topnav a').forEach((link) => {
-    link.addEventListener('click', (event) => {
-      // Prevent default navigation
-      event.preventDefault();
-  
-      // Update current language
-      currentLanguage = link.id.slice(5);
-  
-      // Update text on website to new language
-      updateText();
-    });
+// Set default language to English
+let currentLanguage = 'en';
+
+// Listen for click events on language links
+document.querySelectorAll('.topnav a').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    // Prevent default navigation
+    event.preventDefault();
+
+    // Update current language
+    currentLanguage = link.id.slice(5);
+
+    // Update text on website to new language
+    updateText();
   });
-  
-  // Function to update the text on the website to the current language
-  function updateText() {
-    const translations = languageOptions[currentLanguage];
-  
-    // document.querySelector('.welcome').textContent = translations.welcome;
-    // document.querySelector('.about').textContent = translations.about;
-    // document.querySelector('.contact').textContent = translations.contact;
-  }
-  
-  // Initialize the text on the website to the default language
-  updateText();
-  
+});
+
+// Function to update the text on the website to the current language
+function updateText() {
+  const translations = languageOptions[currentLanguage];
+
+  document.getElementById('#slogan1').textContent = translations.slogan.slogan1;
+  document.getElementById('#slogan2').textContent = translations.slogan.slogan2;
+}
+
+// Initialize the text on the website to the default language
+updateText();
