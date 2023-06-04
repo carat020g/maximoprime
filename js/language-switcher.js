@@ -2,7 +2,7 @@ let currentLanguage = 'en'; // Default language
 
 function loadLanguage(language) {
   // Construct the path to the JSON file based on the language
-  const filePath = `path/to/${language}.json`;
+  const filePath = './json/${language}.json';
 
   // Make an AJAX request to fetch the language JSON file
   const xhr = new XMLHttpRequest();
