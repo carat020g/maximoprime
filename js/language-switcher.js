@@ -1,5 +1,6 @@
 let currentLanguage = 'en'; // Default language
 
+
 function loadCommon() {
   // Construct the path to the common JSON file
   const filePath = './json/common.json';
