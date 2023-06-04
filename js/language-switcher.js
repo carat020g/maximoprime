@@ -4,7 +4,7 @@ let currentFontClass = 'font-sans-pro'; // Default font class
 
 function loadCommon() {
   // Construct the path to the common JSON file
-  const filePath = './json/common.json';
+  const filePath = '/json/common.json';
 
   // Make an AJAX request to fetch the common JSON file
   const xhr = new XMLHttpRequest();
@@ -29,7 +29,7 @@ function updateCommonText(commonTranslations) {
 
 function loadLanguage(language) {
   // Construct the path to the JSON file based on the language
-  const filePath = './json/${language}.json';
+  const filePath = '/json/${language}.json';
 
   // Set the font class based on the selected language
   currentFontClass = language === 'ch' ? 'font-nato-sans-sc' : 'font-sans-pro';
