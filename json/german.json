@@ -1,0 +1,80 @@
+{
+    "main": {
+      "slogan": {
+        "slogan1": "Wir liefern",
+        "slogal2": "Chancen"
+      },
+      "nav": {
+        "chooseyourlanguage": "Wählen Sie Ihre Sprache",
+        "main": "STARTSEITE",
+        "howwework": "WIE WIR ARBEITEN",
+        "faq": "FAQ",
+        "contact": "KONTAKT"
+      }
+    },
+    "howWeWork": {
+      "businesstype": "Fulfillment- und Dropshipping-Geschäft",
+      "header": {
+        "header1": "Bereit, den nächsten Schritt zu gehen und besser zu performen",
+        "header2": "Unsere Produktkategorien umfassen",
+        "header3": "Drei Schlüssel für unseren erfolgreichen Weg"
+      },
+      "context": {
+        "context1": "Maximo Prime wurde mit einer einfachen Mission gegründet - außergewöhnliche Produkte mit anspruchsvollen Kunden zu verbinden.\nDieser Weg begann mit unserem echten Interesse, Werte aus verschiedenen kulturellen Hintergründen zu erkunden.\nWir glauben, dass das Handelsgeschäft über den reinen Kauf und Verkauf physischer Waren hinausgeht.\nEs beinhaltet den Austausch kultureller Kontexte und Erfahrungen.\nMit unserem Engagement für Exzellenz streben wir die besten Ergebnisse in dieser dynamischen Branche an.\nBegleiten Sie uns, während wir versteckte Chancen entdecken und unseren Kunden Zufriedenheit bieten.",
+        "context2": {
+          "element1": "Werkzeuge & Heimwerker",
+          "element2": "Beauty und Körperpflege",
+          "element3": "Haushaltsartikel",
+          "element4": "Wir wählen sorgfältig Produkte aus, die dazu beitragen, das Leben der Menschen einfacher und komfortabler zu gestalten und ihr Gesamterlebnis zu verbessern."
+        },
+        "context3": {
+          "title": {
+            "title1": "Partnerschaft",
+            "title2": "Qualitätskontrolle",
+            "title3": "Kundenfeedback"
+          },
+          "element": {
+            "element1": "Wir glauben, dass eine synergistische Partnerschaft die Grundlage für langfristigen Erfolg bildet.\nWir möchten mit gleichgesinnten Lieferanten zusammenarbeiten und dabei gegenseitig vorteilhafte Beziehungen aufbauen.",
+            "element2": "Die Sicherstellung von erstklassiger Qualität ist insbesondere bei unseren Eigenmarkenprodukten von entscheidender Bedeutung.\nWir sind bestrebt, Kunden durch die Einhaltung hoher Qualitätsstandards einen Mehrwert zu bieten.",
+            "element3": "Durch die aktive Analyse von Markt- und Kundendaten können wir weitere Chancen identifizieren und unseren Markenruf stärken.\nKundenfeedback hat für uns einen hohen Stellenwert, da es unsere zentrale Strategie für Erfolg lenkt."
+          }
+        }
+      }
+    },
+    "faq": {
+      "questions": {
+        "question1": "Welche Art von Marketing- oder Werbeunterstützung bieten Sie zur Förderung des Verkaufs an?",
+        "question2": "Wie ist der Bestell- und Lieferprozess auf Ihrer Plattform?",
+        "question3": "Wie gehen Sie mit Produkt-Rücksendungen und Umtausch um?",
+        "question4": "Wie handhaben Sie die Kommunikation mit Kunden?",
+        "question5": "Wie kann ich Dropshipping-Partner von Maximo Prime werden?"
+      },
+      "answers": {
+        "answer1": "Wir bieten umfassende Marketing- und Werbeunterstützung, um den Verkauf anzukurbeln und unseren Kunden ein verbessertes Einkaufserlebnis zu bieten. Durch den strategischen Einsatz von Social Media und E-Mail-Marketing informieren wir unsere Kunden über Produktneuheiten, spezielle Rabatte und individuelle Angebote. Sie finden Links zu unseren Social-Media-Kanälen auf unserer Website.",
+        "answer2": "Der Lieferprozess unterscheidet sich je nachdem, ob es sich um Produkte handelt, die von einem Fulfillment-Dienst abgewickelt werden oder nicht. Für Produkte, die von einem Fulfillment-Dienst abgewickelt werden, bearbeiten wir Bestellungen gemäß den Lieferverfahren des Dienstes. Für Produkte, die nicht von einem Fulfillment-Dienst abgewickelt werden, kümmert sich unser Team um Verpackung und Versand. Derzeit werden die meisten Artikel auf unserer Plattform über unser Fulfillment-System verwaltet.",
+        "answer3": "Wir haben unterschiedliche Verfahrensweisen, abhängig von der Art des Fulfillments. Für Produkte, die von Amazon erfüllt werden, halten wir uns strikt an die Rückgaberichtlinien von Amazon. Bei Produkten aus unserem Dropshipping-System leiten wir Kunden bei Rückfragen entsprechend unserer Standard-Rückgaberichtlinie an. Unser Ziel ist es, unseren Kunden während des gesamten Prozesses eine zufriedenstellende Erfahrung zu bieten.",
+        "answer4": "Die effektive Kommunikation mit unseren Kunden hat für unser Team höchste Priorität. Obwohl wir nur begrenzten Einfluss auf soziale Netzwerke haben, nutzen wir sie intensiv, um mit unseren Kunden in Kontakt zu treten und unsere Botschaft zu vermitteln. Bei Kundenbeschwerden bemühen wir uns, die Situation schnell zu klären, eine rasche Lösung zu finden und sicherzustellen, dass sich unsere Kunden entspannt und wertgeschätzt fühlen.",
+        "answer5": "Um unser Dropshipping-Partner zu werden, füllen Sie bitte das Formular auf unserer Kontaktseite aus. Wir werden Ihre Bewerbung prüfen und innerhalb von 2-3 Werktagen darauf antworten. Wir legen großen Wert auf langfristige Partnerschaften und freuen uns darauf, gemeinsam Chancen für eine erfolgreiche Zukunft zu erkunden."
+      }
+    },
+    "contactUs": {
+      "message": {
+        "message1": "Bitte füllen Sie dieses Formular aus, und wir werden Ihnen innerhalb von 1-3 Werktagen antworten.",
+        "message2": "Wenn Sie weitere Fragen oder Anfragen haben, die nicht mit Partnerschaftsanfragen zusammenhängen, können Sie diese gerne stellen."
+      },
+      "form": {
+        "companyName": "Firmenname",
+        "website": "Website",
+        "country": "Land",
+        "firstname": "Vorname",
+        "lastname": "Nachname",
+        "jobtitle": "Berufsbezeichnung",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "title": "Titel",
+        "message": "Nachricht"
+      },
+      "agree": "Ich stimme zu, dass Maximo Prime mich bezüglich dieser Nachricht kontaktiert und ich willige in die Sammlung und Verwendung der von mir oben angegebenen Informationen ein."
+    }
+  }
+  

@@ -1,45 +1,37 @@
-import enTranslation from './translation-english.js'
-import chTranslation from './translation-chinese.js'
-import spTranslation from './translation-spanish.js'
-import frTranslation from './translation-french.js'
-import geTranslation from './translation-german.js'
+let currentLanguage = 'en'; // Default language
 
-// Define the variable to store the current translations
-let currentTranslations = {};
+function loadLanguage(language) {
+  // Construct the path to the JSON file based on the language
+  const filePath = `path/to/${language}.json`;
 
-// Add an event listener to the language selection element
+  // Make an AJAX request to fetch the language JSON file
+  const xhr = new XMLHttpRequest();
+  xhr.overrideMimeType('application/json');
+  xhr.open('GET', filePath, true);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      const translations = JSON.parse(xhr.responseText);
+      // Update the text content of elements using the translations object
+      updateText(translations);
+    }
+  };
+  xhr.send();
+}
+
+function updateText(translations) {
+  // Update the text content of elements using the translations object
+  // Example: document.getElementById('elementId').textContent = translations.someText;
+}
+
+// Add event listeners to the language selection links
 document.querySelectorAll('.topnav a').forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
     const selectedLanguage = link.id.slice(5); // Extract the language code from the link id
-    // Import the translation file based on the selected language
-    switch (selectedLanguage) {
-      case 'en':
-        currentTranslations = enTranslations;
-        break;
-      case 'ch':
-        currentTranslations = chTranslations;
-        break;
-      case 'sp':
-        currentTranslations = spTranslations;
-        break;
-      case 'fr':
-        currentTranslations = frTranslations;
-        break;
-      case 'ge':
-        currentTranslations = geTranslations;
-        break;
-      default:
-        currentTranslations = enTranslations; // Default to English
-    }
-    updateText();    
+    currentLanguage = selectedLanguage;
+    loadLanguage(currentLanguage);
   });
 });
 
-function updateText() {
-  // Update the text on the website to the current language using the currentTranslations variable
-  // For example:
-  document.getElementById('slogan1').textContent = currentTranslations.slogan.slogan1;
-  document.getElementById('slogan2').textContent = currentTranslations.slogan.slogan2;
-  // Update other elements as needed
-}
+// Initialize the text on the website with the default language
+loadLanguage(currentLanguage);
