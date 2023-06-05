@@ -10,6 +10,59 @@
   <!-- Importing jQuery and custom JS script for changing the right section content -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/language-switcher.js"></script>
+  <script src="js/nav.js"></script>
+  <script>
+    // Default language
+    let currentLanguage = 'en';
+  
+    // Language selection event handler
+    $('.topnav a').on('click', function(event) {
+      event.preventDefault();
+      const selectedLanguage = $(this).attr('id').substring(5); // Extract the language code from the link id
+      currentLanguage = selectedLanguage;
+  
+      // Update the language selection UI
+      $('.topnav a').removeClass('active');
+      $(this).addClass('active');
+  
+      // Load the language JSON file and update the content
+      loadLanguage(currentLanguage);
+    });
+  
+    // Function to load language JSON and update content
+    function loadLanguage(language) {
+      const filePath = `json/${language}.json`;
+  
+      $.getJSON(filePath, function(translations) {
+        // Update the text content of elements using the translations object
+        updateText(translations);
+      }).fail(function(error) {
+        console.error('Error fetching language JSON:', error);
+      });
+    }
+  
+    // Function to update the text content of elements
+    function updateText(translations) {
+      // Update the text content of elements using the translations object
+      $('#header h3').text(translations.howWeWork.header.header1);
+      $('#header p').eq(0).text(translations.howWeWork.header.header2);
+  
+      const context2Elements = translations.howWeWork.context.context2;
+      $('#context2 ul li').eq(0).text(context2Elements.element1);
+      $('#context2 ul li').eq(1).text(context2Elements.element2);
+      $('#context2 ul li').eq(2).text(context2Elements.element3);
+  
+      // ... Update other elements with their respective translations
+    }
+  
+    // Initialize the text on the website with the default language
+    loadLanguage(currentLanguage);
+  </script>
+  
+  <script src="js/language-switcher.js"></script>
+  <script src="js/nav.js"></script>
 
 </head>
 <body>
@@ -51,56 +104,3 @@
 </div>
 </body>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="js/language-switcher.js"></script>
-<script src="js/nav.js"></script>
-<script>
-  // Default language
-  let currentLanguage = 'en';
-
-  // Language selection event handler
-  $('.topnav a').on('click', function(event) {
-    event.preventDefault();
-    const selectedLanguage = $(this).attr('id').substring(5); // Extract the language code from the link id
-    currentLanguage = selectedLanguage;
-
-    // Update the language selection UI
-    $('.topnav a').removeClass('active');
-    $(this).addClass('active');
-
-    // Load the language JSON file and update the content
-    loadLanguage(currentLanguage);
-  });
-
-  // Function to load language JSON and update content
-  function loadLanguage(language) {
-    const filePath = `json/${language}.json`;
-
-    $.getJSON(filePath, function(translations) {
-      // Update the text content of elements using the translations object
-      updateText(translations);
-    }).fail(function(error) {
-      console.error('Error fetching language JSON:', error);
-    });
-  }
-
-  // Function to update the text content of elements
-  function updateText(translations) {
-    // Update the text content of elements using the translations object
-    $('#header h3').text(translations.howWeWork.header.header1);
-    $('#header p').eq(0).text(translations.howWeWork.header.header2);
-
-    const context2Elements = translations.howWeWork.context.context2;
-    $('#context2 ul li').eq(0).text(context2Elements.element1);
-    $('#context2 ul li').eq(1).text(context2Elements.element2);
-    $('#context2 ul li').eq(2).text(context2Elements.element3);
-
-    // ... Update other elements with their respective translations
-  }
-
-  // Initialize the text on the website with the default language
-  loadLanguage(currentLanguage);
-</script>
-
-<script src="js/language-switcher.js"></script>
-<script src="js/nav.js"></script>
