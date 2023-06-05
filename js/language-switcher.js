@@ -15,8 +15,7 @@ function loadLanguage(language) {
 }
 
 function updateText(translations) {
-  // Update the text content of elements using the translations object
-  // Example: document.getElementById('elementId').textContent = translations.someText;
+
 }
 
 // Add event listeners to the language selection links
