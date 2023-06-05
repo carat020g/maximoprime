@@ -28,43 +28,26 @@ function updateCommonText(commonTranslations) {
 
 
 function loadLanguage(language) {
-  // Construct the path to the JSON file based on the language
-  const filePath = `json/${language}.json`;
+  const filePath = `/${language}.json`; // Update the file path based on the language
 
-  // Set the font class based on the selected language
-  currentFontClass = language === 'ch' ? 'font-nato-sans-sc' : 'font-sans-pro';
-
-  // Make an AJAX request to fetch the language JSON file
-  const xhr = new XMLHttpRequest();
-  xhr.overrideMimeType('application/json');
-  xhr.open('GET', filePath, true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      const translations = JSON.parse(xhr.responseText);
-      // Update the text content of elements using the translations object
+  fetch(filePath)
+    .then(response => response.json())
+    .then(translations => {
       updateText(translations);
-    }
-  };
-  xhr.send();
+    })
+    .catch(error => {
+      console.error('Error fetching language JSON:', error);
+    });
 }
 
 function updateText(translations) {
-  // Remove existing font classes from all elements
-  document.querySelectorAll('*').forEach((element) => {
-    element.classList.remove('font-sans-pro', 'font-nato-sans-sc');
-  });
-
-  // Add the current font class to all elements
-  document.querySelectorAll('*').forEach((element) => {
-    element.classList.add(currentFontClass);
-  });
   // Update the text content of elements using the translations object
   // Example: document.getElementById('elementId').textContent = translations.someText;
 }
 
 // Add event listeners to the language selection links
-document.querySelectorAll('.topnav a').forEach((link) => {
-  link.addEventListener('click', (event) => {
+document.querySelectorAll('.topnav a').forEach(link => {
+  link.addEventListener('click', event => {
     event.preventDefault();
     const selectedLanguage = link.id.slice(5); // Extract the language code from the link id
     currentLanguage = selectedLanguage;
@@ -72,9 +55,5 @@ document.querySelectorAll('.topnav a').forEach((link) => {
   });
 });
 
-// Initialize the common texts on the website
-loadCommon();
-
 // Initialize the text on the website with the default language
 loadLanguage(currentLanguage);
-
