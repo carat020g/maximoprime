@@ -1,7 +1,6 @@
 let currentLanguage = 'en'; // Default language
 let currentFontClass = 'font-sans-pro'; // Default font class
 
-
 function loadLanguage(language) {
   const filePath = `/${language}.json`; // Update the file path based on the language
 
