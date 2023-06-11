@@ -29,9 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('content').innerHTML = content;
                 updateMainPageContent(languageData, content);
             })
-
           }).catch(error => {
                     console.error('Error fetching language data:', error);
-                });
+          });
 
 });
