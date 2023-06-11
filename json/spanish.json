@@ -1,0 +1,85 @@
+{
+    "main": {
+      "slogan": {
+        "slogan1": "Entregamos",
+        "slogan2": "Oportunidades"
+      },
+      "nav": {
+        "chooseyourlanguage": "Elige tu idioma",
+        "main": "INICIO",
+        "howwework": "CÓMO TRABAJAMOS",
+        "faq": "PREGUNTAS FRECUENTES",
+        "contact": "CONTACTO"
+      }
+    },
+    "howWeWork": {
+      "businesstype": "Negocio de cumplimiento y envío directo",
+      "header": {
+        "header1": "Listo para dar un paso adelante y mejorar el rendimiento",
+        "header2": "Nuestras categorías de productos incluyen",
+        "header3": "Tres claves para nuestro viaje exitoso"
+      },
+      "context": {
+        "context1": "Maximo Prime se estableció con una misión simple: conectar productos excepcionales con clientes exigentes.\nEste viaje comenzó a partir de nuestro genuino interés en explorar valores de diferentes contextos culturales.\nCreemos que el comercio va más allá de comprar y vender productos físicos.\nInvolucra compartir contextos y experiencias culturales.\nCon nuestro compromiso con la excelencia, buscamos obtener los mejores resultados en esta industria dinámica.\nÚnete a nosotros mientras descubrimos oportunidades ocultas y brindamos satisfacción a nuestros clientes.",
+        "context2": {
+          "element1": "Herramientas y mejoras para el hogar",
+          "element2": "Belleza y cuidado personal",
+          "element3": "Artículos esenciales para el hogar",
+          "element4": "Seleccionamos cuidadosamente productos que contribuyen a hacer la vida de las personas más fácil y cómoda, mejorando su experiencia en general."
+        },
+        "context3": {
+          "title": {
+            "title1": "Colaboración",
+            "title2": "Control de calidad",
+            "title3": "Opiniones de los clientes"
+          },
+          "element": {
+            "element1": "Creemos que una colaboración sinérgica es la base del éxito a largo plazo.\nNos gustaría colaborar con proveedores afines, estableciendo relaciones mutuamente beneficiosas.",
+            "element2": "Asegurar una calidad superior es fundamental, especialmente para nuestros productos de etiqueta privada.\nNos comprometemos a brindar valor a los clientes manteniendo altos estándares de calidad.",
+            "element3": "Al analizar activamente datos de mercado y clientes, podemos identificar más oportunidades y fortalecer nuestra reputación de marca.\nValoramos las opiniones de los clientes, ya que impulsan nuestra estrategia central para el éxito."
+          }
+        }
+      }
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "questions": {
+        "question1": "¿Qué tipo de soporte de marketing o promocional ofrecen para impulsar las ventas?",
+        "question2": "¿Cuál es el proceso para realizar pedidos y la entrega en su plataforma?",
+        "question3": "¿Cómo manejan las devoluciones y los cambios de productos?",
+        "question4": "¿Cómo manejan la comunicación con los clientes?",
+        "question5": "¿Cuál es el proceso para convertirse en socio de envío directo?"
+      },
+      "answers": {
+        "answer1": "Ofrecemos un completo soporte de marketing y promociones para impulsar las ventas y proporcionar una experiencia de compra mejorada para nuestros clientes. A través de nuestro uso estratégico de las redes sociales y el marketing por correo electrónico, mantenemos a los clientes informados sobre lanzamientos de productos, descuentos especiales y ofertas personalizadas. Puede encontrar fácilmente enlaces a nuestras redes sociales en nuestro sitio web.",
+        "answer2": "El proceso de entrega difiere para los productos de cumplimiento y los productos que no son de cumplimiento. Para los productos de cumplimiento, manejamos los pedidos de acuerdo con el procedimiento de entrega establecido por la empresa de cumplimiento. En cuanto a los productos que no son de cumplimiento, nuestro equipo se encarga del empaquetado y la entrega. Actualmente, la mayoría de los artículos en nuestra plataforma son gestionados a través del sistema de cumplimiento.",
+        "answer3": "Tenemos diferentes procedimientos dependiendo del método de cumplimiento. Para los productos cumplidos por Amazon, cumplimos estrictamente con las políticas de devolución de Amazon. En cuanto a los productos de nuestro sistema de envío directo, si la consulta de devolución cumple con nuestros criterios, guiamos a los clientes para que sigan nuestra política de devolución estándar. Nuestro compromiso es proporcionarles una experiencia satisfactoria en todo el proceso.",
+        "answer4": "Nuestro equipo prioriza la comunicación efectiva con nuestros clientes. Aunque tenemos un control limitado sobre las redes sociales, las utilizamos para interactuar con nuestros clientes y transmitir nuestro mensaje. Al abordar las quejas de los clientes, nos esforzamos por aclarar rápidamente la situación, buscar una solución rápida y asegurarnos de que nuestros clientes se sientan relajados y valorados.",
+        "answer5": "Para convertirse en nuestro socio de envío directo, complete el formulario en nuestra página de contacto. Revisaremos su solicitud y nos esforzaremos por responder en un plazo de 2 a 3 días hábiles. Valoramos el potencial de las asociaciones a largo plazo y esperamos explorar oportunidades juntos para un futuro prometedor."
+      }
+    },
+    "contactUs": {
+      "message": {
+        "message1": "Por favor, complete este formulario y le responderemos en un plazo de 1 a 3 días hábiles.",
+        "message2": "Si tiene otras consultas y preguntas aparte de las solicitudes de asociación, no dude en preguntar."
+      },
+      "message_simple_version": {
+        "message1": "¡Si tienes alguna pregunta o una brillante idea de negocios que te gustaría compartir, contáctanos!",
+        "message2": "Nos encantaría saber de ti."
+      },
+      "form": {
+        "companyName": "Nombre de la empresa",
+        "website": "Sitio web",
+        "country": "País",
+        "firstname": "Nombre",
+        "lastname": "Apellido",
+        "jobtitle": "Cargo",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "title": "Título",
+        "message": "Mensaje"
+      },
+      "agree": "Acepto que Maximo Prime se comunique conmigo acerca de este mensaje, y doy mi consentimiento para la recopilación y el uso de la información que he proporcionado anteriormente."
+    }
+  }
+  

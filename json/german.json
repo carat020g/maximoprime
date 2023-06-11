@@ -42,6 +42,7 @@
       }
     },
     "faq": {
+      "title": "Häufig gestellte Fragen",
       "questions": {
         "question1": "Welche Art von Marketing- oder Werbeunterstützung bieten Sie zur Förderung des Verkaufs an?",
         "question2": "Wie ist der Bestell- und Lieferprozess auf Ihrer Plattform?",
@@ -61,6 +62,10 @@
       "message": {
         "message1": "Bitte füllen Sie dieses Formular aus, und wir werden Ihnen innerhalb von 1-3 Werktagen antworten.",
         "message2": "Wenn Sie weitere Fragen oder Anfragen haben, die nicht mit Partnerschaftsanfragen zusammenhängen, können Sie diese gerne stellen."
+      },
+      "message_simple_version": {
+        "message1": "Wenn Sie Fragen haben oder eine brillante Geschäftsidee teilen möchten, kontaktieren Sie uns!",
+        "message2": "Wir freuen uns darauf, von Ihnen zu hören."
       },
       "form": {
         "companyName": "Firmenname",

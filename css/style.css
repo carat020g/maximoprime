@@ -9,6 +9,8 @@
 }
 
 body {
+  width: 60%;
+  margin: 0 auto;
   background: linear-gradient(to bottom, #222222 40%, #333333 60%);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -79,7 +81,7 @@ header {
 
 .sidenav {
   flex: 0 0 auto;  
-  width: 200px;
+  width: 30%;
   margin-left: 10px;
   margin-top: 30px;
 }
@@ -113,7 +115,8 @@ header {
 
   
 #content {
-  flex: 1 1 auto;
+  width: 70%;
+  /* flex: 1 1 auto; */
 }
 
 nav {

@@ -9,46 +9,51 @@
 
   <!-- Importing jQuery and custom JS script for changing the right section content -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/update-page.js"></script>
   <script src="js/language-switcher.js"></script>
-  <script src="js/nav.js"></script>
+  <script src="js/sidenav.js"></script>
 
 </head>
 <body>
-<header>
-  <img class="logo" src="images/Logo-white.png">
-  <nav class="topnav">
-    <ul>
-      <li><a href="#" id="lang_en" class="active">ENGLISH</a></li>
-      <li><a href="#" id="lang_ch">CHINESE</a></li>
-      <li><a href="#" id="lang_sp">SPANISH</a></li>  
-      <li><a href="#" id="lang_fr">FRENCH</a></li>  
-      <li><a href="#" id="lang_ge">GERMAN</a></li>  
-    </ul>
-  </nav>
-</header>
-  <!-- Upper Navigation Bar -->
+  <header>
 
-<div class="container">
-  <!-- Side Navigation Bar -->
-  <div class="sidenav">
-    <nav>
-      <ul>
-        <li><a href="#" id="nav_main">Main</a></li>
-        <li><a href="#" id="nav_how_we_work">How We Work</a></li>
-        <li><a href="#" id="nav_faq">FAQ</a></li>
-        <li><a href="#" id="nav_contact_us">Contact Us</a></li>
-      </ul>
-    </nav>
-  </div>
+      <img class="logo" src="images/Logo-white.png">
+      <nav class="topnav">
+        <ul id="languageUl">
+          <li><a href="#lang_en" id="lang_en" class="active">ENGLISH</a></li>
+          <li><a href="#lang_ch" id="lang_ch">CHINESE</a></li>
+          <li><a href="#lang_sp" id="lang_sp">SPANISH</a></li>
+          <li><a href="#lang_fr" id="lang_fr">FRENCH</a></li>
+          <li><a href="#lang_ge" id="lang_ge">GERMAN</a></li>
+        </ul>
+      </nav>
 
-  <div id="main_message">
-    <div id="message1"></div>
-    <div id="message2"></div>
+  </header>
+
+  <div class="container">
+    <!-- Side Navigation Bar -->
+    <div class="sidenav">
+      <nav>
+        <ul>
+          <li><a href="#main" id="nav_main">Main</a></li>
+          <li><a href="#how-we-work" id="nav_how_we_work">How We Work</a></li>
+          <li><a href="#faq" id="nav_faq">FAQ</a></li>
+          <li><a href="#contact-us" id="nav_contact_us">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Right Content Section -->
+    <div id="content" class="clearfix">
+      <div id="main_message">
+        <div id="slogan1"></div>
+        <div id="slogan2"></div>
+      </div>
+      <img class="main_img" src="images/main.png">
+    </div>
   </div>
-  <!-- Right Content Section -->
-  <div id="content" class="clearfix">
-    <img class="main_img" src="images/main.png">
-  </div>
-</div>
 </body>
+
 </html>
