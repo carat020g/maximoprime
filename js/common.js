@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
   fetchLanguageData(savedLanguageOption)
-    .then(([languageData]) => {
+    .then(languageData => {
         let linkId = getSavedSideMenuOption();
             fetchContentFile('main-content.html')
             .then(content => {
