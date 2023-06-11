@@ -4,6 +4,13 @@
         "slogan1": "We Deliver",
         "slogal2": "Opportunitiess"
       },
+      "langauge": {
+        "english": "ENGLISH",
+        "chinese": "CHINESE",
+        "spanish": "SPANISH",
+        "FRENCH": "FRENCH",
+        "GERMAN": "GERMAN"
+      },
       "nav": {
         "chooseyourlanguage": "Choose your language",
         "main": "MAIN",
