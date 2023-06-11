@@ -114,11 +114,6 @@ header {
   color: black;
 }
 
-  
-#content {
-  width: 70%;
-  /* flex: 1 1 auto; */
-}
 
 nav {
     margin-right: 20px; /* adjust this value to your liking */
