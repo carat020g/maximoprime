@@ -8,6 +8,10 @@
   font-family: 'Noto Sans SC', sans-serif;
 }
 
+html{
+  height: 101%;
+}
+
 body {
   width: 60%;
   margin: 0 auto;

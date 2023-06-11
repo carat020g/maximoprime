@@ -49,9 +49,6 @@ function updateHowWeWorkPageContent(languageData) {
 
     // Function to update the page content with the fetched language data
 function updateFaqPageContent(languageData) {
-    // Update the FAQ questions and answers
-    document.getElementById('title').textContent = languageData.faq.title;
-
     document.getElementById('question1').textContent = languageData.faq.questions.question1;
     document.getElementById('question2').textContent = languageData.faq.questions.question2;
     document.getElementById('question3').textContent = languageData.faq.questions.question3;

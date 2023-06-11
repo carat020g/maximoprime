@@ -1,13 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    let languageId = getSavedLanguageOption();
     // ex. linkId = 'nav_main', languageId = 'en'
     function showContent(linkId, languageId) {
-        // Clear any existing content
-
-
-        // Fetch the language JSON file
-
+        let languageId = getSavedLanguageOption();
         Promise.all([
             fetchLanguageData(languageId),
             fetchCommonData()
@@ -66,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
  
-
 
     // Add event listeners to the navigation links
     document.getElementById('nav_main').addEventListener('click', function(event) {
