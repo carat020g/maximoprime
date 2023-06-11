@@ -15,6 +15,7 @@
   <script src="js/sidenav.js"></script>
   <script src="js/language-switcher.js"></script>
 
+
 </head>
 <body>
   <header>
@@ -47,13 +48,16 @@
 
     <!-- Right Content Section -->
     <div id="content" class="clearfix">
-      <div id="main_message">
-        <div id="slogan1"></div>
-        <div id="slogan2"></div>
-      </div>
-      <img class="main_img" src="images/main.png">
-    </div>
+
   </div>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    fetchContentFile('main-content.html')
+              .then(content => {
+                  document.getElementById('content').innerHTML = content;
+              })              
+  });
+</script>
 
 </html>
