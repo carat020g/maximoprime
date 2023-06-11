@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             switch (linkId) {
             case 'nav_main':
                 // Code to show the main content
-                fetchContentFile('index.html')
+                fetchContentFile('main-content.html')
                 .then(content => {
                     document.getElementById('content').innerHTML = content;
                 })
@@ -65,25 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error fetching language data:', error);
         });
     }
-   // Function to fetch the HTML content file and apply language translations
-function fetchContentFile(filename) {
-
-    // Replace 'your-content-files-path' with the path to your HTML content files
-    let url = `${filename}`;
-  
-    return fetch(url)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`Failed to fetch content file (${response.status} ${response.statusText})`);
-        }
-        console.log(filename)
-        return response.text();
-      })
-      .catch(error => {
-        console.error('Error fetching content file:', error);
-        throw error; // Rethrow the error to propagate it to the caller
-      });
-  }   
+ 
 
 
     // Add event listeners to the navigation links

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const langLinks = document.querySelectorAll('.topnav a');
+    let langLinks = document.querySelectorAll('.topnav a');
     langLinks.forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault();
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.add('active');
 
         // Get the language ID from the link's ID
-        const languageId = this.id.replace('lang_', '');
+        let languageId = this.id.replace('lang_', '');
 
         // Save the selected language option
         saveLanguageOption(languageId);
@@ -40,7 +40,7 @@ Promise.all([
     switch (linkId) {
     case 'nav_main':
         // Code to show the main content
-        fetchContentFile('index.html')
+        fetchContentFile('main-content.html')
         break;
     case 'nav_how_we_work':
         // Code to fetch and show the "How We Work" content
