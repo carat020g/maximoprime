@@ -2,7 +2,14 @@ document.addEventListener('DOMContentLoaded', function() {
    
   let savedLanguageOption = getSavedLanguageOption();
   if (!savedLanguageOption) {
+    saveLanguageOption('en');
       savedLanguageOption = 'en';
+  }
+
+  let savedSideMenuOption = getSavedLanguageOption();
+  if (!savedSideMenuOption) {
+    saveSideMenuOption('nav_main');
+    savedSideMenuOption = 'nav_main';
   }
   
     let langLinks = document.querySelectorAll('.topnav a');

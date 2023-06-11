@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
         fetchCommonData(),
     ])
     .then(([languageData, commonData]) => {
+        console.log(languageId)
+        console.log(languageData)
         let linkId = getSavedSideMenuOption();
         // Implement the content change logic based on the link ID and language data
         switch (linkId) {
