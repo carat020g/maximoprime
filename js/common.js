@@ -15,13 +15,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
 
-      updateMainPageContent(languageData);
+      Promise.all([
+        fetchLanguageData(languageId),
+        fetchCommonData(),
+    ])
+    .then(([languageData, commonData]) => {
+        let linkId = getSavedSideMenuOption();
+            fetchContentFile('main-content.html')
+            .then(content => {
+                document.getElementById('content').innerHTML = content;
+                updateMainPageContent(languageData, content);
+            })
 
-        fetchContentFile('main-content.html')
-                  .then(content => {
-                      document.getElementById('content').innerHTML = content;
-                  })              
-
-
+          }).catch(error => {
+                    console.error('Error fetching language data:', error);
+                });
 
 });
