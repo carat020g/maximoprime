@@ -2,9 +2,9 @@
     "main": {
       "slogan": {
         "slogan1": "We Deliver",
-        "slogal2": "Opportunitiess"
+        "slogan2": "Opportunitiess"
       },
-      "langauge": {
+      "language": {
         "english": "ENGLISH",
         "chinese": "CHINESE",
         "spanish": "SPANISH",
