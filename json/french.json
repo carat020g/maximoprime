@@ -4,6 +4,13 @@
         "slogan1": "Nous Livrons",
         "slogal2": "Des Opportunités"
       },
+      "language": {
+        "english": "ANGLAIS",
+        "chinese": "CHINOIS",
+        "spanish": "ESPAGNOL",
+        "french": "FRANÇAIS",
+        "german": "ALLEMAND"
+      },
       "nav": {
         "chooseyourlanguage": "Choisissez votre langue",
         "main": "ACCUEIL",

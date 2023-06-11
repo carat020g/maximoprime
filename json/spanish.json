@@ -4,6 +4,13 @@
         "slogan1": "Entregamos",
         "slogan2": "Oportunidades"
       },
+      "language": {
+        "english": "INGLÉS",
+        "chinese": "CHINO",
+        "spanish": "ESPAÑOL",
+        "french": "FRANCÉS",
+        "german": "ALEMÁN"
+      },
       "nav": {
         "chooseyourlanguage": "Elige tu idioma",
         "main": "INICIO",

@@ -4,6 +4,13 @@
         "slogan1": "Wir liefern",
         "slogal2": "Chancen"
       },
+      "language": {
+        "english": "ENGLISCH",
+        "chinese": "CHINESISCH",
+        "spanish": "SPANISCH",
+        "french": "FRANZÖSISCH",
+        "german": "DEUTSCH"
+      },
       "nav": {
         "chooseyourlanguage": "Wählen Sie Ihre Sprache",
         "main": "STARTSEITE",

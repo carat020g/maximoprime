@@ -4,6 +4,13 @@
         "slogan1": "我们提供",
         "slogal2": "机会"
       },
+      "language": {
+        "english": "英语",
+        "chinese": "中文",
+        "spanish": "西班牙语",
+        "french": "法语",
+        "german": "德语"
+      },
       "nav": {
         "chooseyourlanguage": "选择您的语言",
         "main": "首页",
