@@ -20,7 +20,6 @@
     // Function to update the page content with the fetched language data
     function updateMainPageContent(languageData) {
         // Update the main slogan
-        console.log()
         document.getElementById('slogan1').textContent = languageData.main.slogan.slogan1;
         document.getElementById('slogan2').textContent = languageData.main.slogan.slogan2;
 
