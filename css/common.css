@@ -23,10 +23,6 @@ body {
   font-family: 'ZCOOL XiaoWei', sans-serif;
 }
 
-#menu2 {
-  color: #568826;
-}
-
 nav a {
     color: #DDDDDD;
 }
@@ -42,8 +38,8 @@ header {
   height: 100px;
 }  
 .main_img {
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   float: right;
   margin-right: 30px;
 }

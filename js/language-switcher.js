@@ -41,6 +41,10 @@ Promise.all([
     case 'nav_main':
         // Code to show the main content
         fetchContentFile('main-content.html')
+        .then(content => {
+            document.getElementById('content').innerHTML = content;
+            updateMainPageContent(languageData, content);
+        })
         break;
     case 'nav_how_we_work':
         // Code to fetch and show the "How We Work" content
