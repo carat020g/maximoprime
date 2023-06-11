@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    const languageId = getSavedLanguageOption();
+    let languageId = getSavedLanguageOption();
     // ex. linkId = 'nav_main', languageId = 'en'
     function showContent(linkId, languageId) {
         // Clear any existing content
@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
             case 'nav_main':
                 // Code to show the main content
                 fetchContentFile('index.html')
+                .then(content => {
+                    document.getElementById('content').innerHTML = content;
+                })
                 break;
             case 'nav_how_we_work':
                 // Code to fetch and show the "How We Work" content
@@ -66,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function fetchContentFile(filename) {
 
     // Replace 'your-content-files-path' with the path to your HTML content files
-    const url = `${filename}`;
+    let url = `${filename}`;
   
     return fetch(url)
       .then(response => {
