@@ -26,18 +26,21 @@ function updateLanguageOptions(languageData){
     document.getElementById('lang_ge').textContent = languageData.main.language.german;  
 }
 
+
+function updateSideMenuOptions(languageData){
+            // Update the navigation menu
+            document.getElementById('nav_main').textContent = languageData.main.nav.main;
+            document.getElementById('nav_how_we_work').textContent = languageData.main.nav.howwework;
+            document.getElementById('nav_faq').textContent = languageData.main.nav.faq;
+            document.getElementById('nav_contact_us').textContent = languageData.main.nav.contact;
+    
+}
     // Function to update the page content with the fetched language data
     function updateMainPageContent(languageData) {
         // Update the main slogan
         document.getElementById('slogan1').textContent = languageData.main.slogan.slogan1;
         document.getElementById('slogan2').textContent = languageData.main.slogan.slogan2;
 
-        // Update the navigation menu
-        document.getElementById('nav_main').textContent = languageData.main.nav.main;
-        document.getElementById('nav_how_we_work').textContent = languageData.main.nav.howwework;
-        document.getElementById('nav_faq').textContent = languageData.main.nav.faq;
-        document.getElementById('nav_contact_us').textContent = languageData.main.nav.contact;
-        updateLanguageOptions(languageData);
     }
     
 function updateHowWeWorkPageContent(languageData) {
@@ -54,6 +57,7 @@ function updateHowWeWorkPageContent(languageData) {
     document.getElementById('element1').textContent = languageData.howWeWork.context.context3.element.element1;
     document.getElementById('element2').textContent = languageData.howWeWork.context.context3.element.element2;
     document.getElementById('element3').textContent = languageData.howWeWork.context.context3.element.element3;
+    updateLanguageOptions(languageData);
 }
 
     // Function to update the page content with the fetched language data
@@ -69,7 +73,7 @@ function updateFaqPageContent(languageData) {
     document.getElementById('answer3').textContent = languageData.faq.answers.answer3;
     document.getElementById('answer4').textContent = languageData.faq.answers.answer4;
     document.getElementById('answer5').textContent = languageData.faq.answers.answer5;
-
+    updateLanguageOptions(languageData);
 }
 
         // Function to update the page content with the fetched language data
@@ -80,5 +84,6 @@ function updateContactUsPageContent(languageData, commonData) {
      
      // Update the form labels
      document.getElementById('email1').textContent = commonData.email.google;
-     document.getElementById('email2').textContent = commonData.email.aliyun;    
+     document.getElementById('email2').textContent = commonData.email.aliyun;  
+     updateLanguageOptions(languageData);  
 }
