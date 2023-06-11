@@ -23,9 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   fetchLanguageData('en')
     .then(languageData => {
-        let linkId = getSavedSideMenuOption();
             fetchContentFile('main-content.html')
             .then(content => {
+              console.log("DATA IS :")
+              console.log(languageData);
                 document.getElementById('content').innerHTML = content;
                 updateMainPageContent(languageData, content);
             })
