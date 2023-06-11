@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // ex. linkId = 'nav_main', languageId = 'en'
     function showContent(linkId, languageId) {
-        let languageId = getSavedLanguageOption();
         Promise.all([
             fetchLanguageData(languageId),
             fetchCommonData()
@@ -66,24 +65,28 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('nav_main').addEventListener('click', function(event) {
         event.preventDefault();
         saveSideMenuOption('nav_main');
+        let languageId = getSavedLanguageOption();
         showContent('nav_main', `${languageId}`);
     });
 
     document.getElementById('nav_how_we_work').addEventListener('click', function(event) {
         event.preventDefault();
         saveSideMenuOption('nav_how_we_work');
+        let languageId = getSavedLanguageOption();
         showContent('nav_how_we_work', `${languageId}`);
     });
 
     document.getElementById('nav_faq').addEventListener('click', function(event) {
         event.preventDefault();
         saveSideMenuOption('nav_faq');
+        let languageId = getSavedLanguageOption();
         showContent('nav_faq', `${languageId}`);
     });
 
     document.getElementById('nav_contact_us').addEventListener('click', function(event) {
         event.preventDefault();
         saveSideMenuOption('nav_contact_us');
+        let languageId = getSavedLanguageOption();
         showContent('nav_contact_us', `${languageId}`);
     });
 
