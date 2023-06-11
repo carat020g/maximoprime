@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         langLinks.forEach(link => {
         link.classList.remove('active');
         });
-
         // Set current link as active
         this.classList.add('active');
 
