@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
       savedLanguageOption = 'en';
   }
   
-    
     let langLinks = document.querySelectorAll('.topnav a');
       langLinks.forEach(link => {
         if (link.id === `lang_${savedLanguageOption}`) {
