@@ -57,7 +57,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
+  width: fit-content;
   height: 30px;
   font-size: 12px;
   border: 1px solid white;
