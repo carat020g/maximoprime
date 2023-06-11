@@ -17,6 +17,14 @@
         throw error; // Rethrow the error to propagate it to the caller
       });
   }     
+
+  function updateLanguageOptionContent(languageData) {
+    document.getElementById('lang_en').textContent = languageData.main.language.english;
+    document.getElementById('lang_ch').textContent = languageData.main.language.chinese;
+    document.getElementById('lang_sp').textContent = languageData.main.language.spanish;
+    document.getElementById('lang_fr').textContent = languageData.main.language.french;
+    document.getElementById('lang_ge').textContent = languageData.main.language.german;    
+  }
     // Function to update the page content with the fetched language data
     function updateMainPageContent(languageData) {
         // Update the main slogan

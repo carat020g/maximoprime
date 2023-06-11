@@ -23,72 +23,69 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     });
 
-
-
     // Language change logic
     function changeLanguage(languageId) {
-    // Fetch language data using AJAX or fetch API
-// Fetch the language JSON file
 
-Promise.all([
-    fetchLanguageData(languageId),
-    fetchCommonData()
-])
-.then(([languageData, commonData]) => {
-    let linkId = getSavedSideMenuOption();
-    // Implement the content change logic based on the link ID and language data
-    switch (linkId) {
-    case 'nav_main':
-        // Code to show the main content
-        fetchContentFile('main-content.html')
-        .then(content => {
-            document.getElementById('content').innerHTML = content;
-            updateMainPageContent(languageData, content);
-        })
-        break;
-    case 'nav_how_we_work':
-        // Code to fetch and show the "How We Work" content
-        fetchContentFile('how-we-work.html')
-        .then(content => {
-            document.getElementById('content').innerHTML = content;
-            updateHowWeWorkPageContent(languageData, content);
-        })
-        .catch(error => {
-            console.error('Error fetching "How We Work" content:', error);
-        });
-    break;
-    case 'nav_faq':
+    Promise.all([
+        fetchLanguageData(languageId),
+        fetchCommonData(),
+        updateLanguageOptionContent(languageData)
+    ])
+    .then(([languageData, commonData]) => {
+        let linkId = getSavedSideMenuOption();
+        // Implement the content change logic based on the link ID and language data
+        switch (linkId) {
+        case 'nav_main':
+            // Code to show the main content
+            fetchContentFile('main-content.html')
+            .then(content => {
+                document.getElementById('content').innerHTML = content;
+                updateMainPageContent(languageData, content);
+            })
+            break;
+        case 'nav_how_we_work':
             // Code to fetch and show the "How We Work" content
-        fetchContentFile('faq.html')
-        .then(content => {
-            console.log(document);
-            document.getElementById('content').innerHTML = content;
-            updateFaqPageContent(languageData);
-        })
-        .catch(error => {
-            console.error('Error fetching "How We Work" content:', error);
-        });
-    break;
-    case 'nav_contact_us':
-        // Code to fetch and show the "How We Work" content
-        fetchContentFile('contact-us.html')
-        .then(content => {
-            document.getElementById('content').innerHTML = content;
-            updateContactUsPageContent(languageData, commonData, content);
-        })
-        .catch(error => {
-            console.error('Error fetching "How We Work" content:', error);
-        });
-    break;
-    // Add more cases for other navigation links as needed
-    default:
+            fetchContentFile('how-we-work.html')
+            .then(content => {
+                document.getElementById('content').innerHTML = content;
+                updateHowWeWorkPageContent(languageData, content);
+            })
+            .catch(error => {
+                console.error('Error fetching "How We Work" content:', error);
+            });
         break;
-    }
-})
-.catch(error => {
-    console.error('Error fetching language data:', error);
-});
-    }
+        case 'nav_faq':
+                // Code to fetch and show the "How We Work" content
+            fetchContentFile('faq.html')
+            .then(content => {
+                console.log(document);
+                document.getElementById('content').innerHTML = content;
+                updateFaqPageContent(languageData);
+            })
+            .catch(error => {
+                console.error('Error fetching "How We Work" content:', error);
+            });
+        break;
+        case 'nav_contact_us':
+            // Code to fetch and show the "How We Work" content
+            fetchContentFile('contact-us.html')
+            .then(content => {
+                document.getElementById('content').innerHTML = content;
+                updateContactUsPageContent(languageData, commonData, content);
+            })
+            .catch(error => {
+                console.error('Error fetching "How We Work" content:', error);
+            });
+        break;
+        // Add more cases for other navigation links as needed
+        default:
+            break;
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching language data:', error);
+    });
+        }
 
   
 
