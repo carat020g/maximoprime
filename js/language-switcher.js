@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
     Promise.all([
         fetchLanguageData(languageId),
         fetchCommonData(),
-        updateLanguageOptionContent(languageData)
     ])
     .then(([languageData, commonData]) => {
         let linkId = getSavedSideMenuOption();

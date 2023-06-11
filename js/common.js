@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
 
+      updateMainPageContent(languageData);
+
+        fetchContentFile('main-content.html')
+                  .then(content => {
+                      document.getElementById('content').innerHTML = content;
+                  })              
 
 
 
