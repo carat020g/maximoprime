@@ -34,7 +34,7 @@ function fetchLanguageData(languageId) {
       throw new Error(`Failed to fetch language data (${response.status} ${response.statusText})`);
     }
     console.log("language is :");
-    console.log(reaponse);
+    console.log(response);
     return response.json();
   })
   .catch((error) => {
