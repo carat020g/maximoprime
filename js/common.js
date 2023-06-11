@@ -15,11 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
 
-      Promise.all([
-        fetchLanguageData(languageId),
-        fetchCommonData(),
-    ])
-    .then(([languageData, commonData]) => {
+  fetchLanguageData(savedLanguageOption)
+    .then(([languageData]) => {
         let linkId = getSavedSideMenuOption();
             fetchContentFile('main-content.html')
             .then(content => {
