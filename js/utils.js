@@ -36,7 +36,7 @@ function getSavedLanguageOption() {
   // Function to fetch language data
   function fetchLanguageData(languageId) {
     // Define the mapping between language IDs and JSON file names
-    const languageFiles = {
+    let languageFiles = {
       en: 'json/english.json',
       ch: 'json/chinese.json',
       sp: 'json/spanish.json',
@@ -45,7 +45,7 @@ function getSavedLanguageOption() {
     };
   
     // Get the file name based on the language ID
-    const fileName = languageFiles[languageId];
+    let fileName = languageFiles[languageId];
   
     // Return a promise that fetches the language data from the JSON file
     return fetch(fileName)
