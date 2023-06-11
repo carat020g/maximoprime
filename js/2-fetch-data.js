@@ -1,4 +1,3 @@
-
 function fetchCommonData(){
     return fetch('json/common.json')
   .then((response) => {
