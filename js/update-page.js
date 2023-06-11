@@ -18,6 +18,14 @@
       });
   }     
 
+function updateLanguageOptions(languageData){
+    document.getElementById('lang_en').textContent = languageData.main.language.english;
+    document.getElementById('lang_ch').textContent = languageData.main.language.chinese;
+    document.getElementById('lang_sp').textContent = languageData.main.language.spanish;
+    document.getElementById('lang_fr').textContent = languageData.main.language.french;
+    document.getElementById('lang_ge').textContent = languageData.main.language.german;  
+}
+
     // Function to update the page content with the fetched language data
     function updateMainPageContent(languageData) {
         // Update the main slogan
@@ -29,12 +37,7 @@
         document.getElementById('nav_how_we_work').textContent = languageData.main.nav.howwework;
         document.getElementById('nav_faq').textContent = languageData.main.nav.faq;
         document.getElementById('nav_contact_us').textContent = languageData.main.nav.contact;
-
-        document.getElementById('lang_en').textContent = languageData.main.language.english;
-        document.getElementById('lang_ch').textContent = languageData.main.language.chinese;
-        document.getElementById('lang_sp').textContent = languageData.main.language.spanish;
-        document.getElementById('lang_fr').textContent = languageData.main.language.french;
-        document.getElementById('lang_ge').textContent = languageData.main.language.german;  
+        updateLanguageOptions(languageData);
     }
     
 function updateHowWeWorkPageContent(languageData) {

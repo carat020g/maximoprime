@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(languageId)
         console.log(languageData)
         let linkId = getSavedSideMenuOption();
+        updateLanguageOptions(languageData);
         // Implement the content change logic based on the link ID and language data
         switch (linkId) {
         case 'nav_main':
