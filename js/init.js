@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
               console.log("DATA IS :")
               console.log(languageData);
                 document.getElementById('content').innerHTML = content;
+                updateLanguageOptions(languageData);
+                updateSideMenuOptions(languageData);
                 updateMainPageContent(languageData, content);
             })
           }).catch(error => {
