@@ -1,9 +1,5 @@
-.main_container {
-    background-image: url('../images/main.png');
-    opacity: 0.5;
-    float: right;
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-size: 500px;
-}
+#main-image {
+    width: 80%; /* Adjust the width percentage as needed */
+    height: auto; /* This will maintain the image's aspect ratio */
+  }
   

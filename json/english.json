@@ -2,7 +2,7 @@
     "main": {
       "slogan": {
         "slogan1": "We Deliver",
-        "slogan2": "Opportunitiess"
+        "slogan2": "Opportunitiess :>"
       },
       "language": {
         "english": "ENGLISH",
@@ -29,16 +29,16 @@
       "context": {
         "context1": "Maximo Prime was established with a simple mission - to connect exceptional product with discerning customers.\nThis journey started from our geniune interest in exploring values from diverse cultural backgrounds.\nWe believe that trading business goes beyond buying and selling physical goods.\nIt involves sharing cultural contexts and experiences.\nWith our commitment to excellence, we aim to achieve the best results in this dynamic industry.\nJoin us as we uncover hidden opportunities and deliver satisfaction to our customers.",
         "context2": {
-          "element1": "Tools & Home improvement",
-          "element2": "Beauty And Personal Care",
-          "element3": "Household essentials",
+          "element1": "1) Tools & Home improvement",
+          "element2": "2) Beauty And Personal Care",
+          "element3": "3) Household essentials",
           "element4": "We carefully choose items that contribute to making people's lives easier and more comfortable and enhance their overall experience."
         },
         "context3": {
           "title": {
-            "title1": "Partnership",
-            "title2": "Quality Check",
-            "title3": "Customer Feedback"
+            "title1": "1) Partnership",
+            "title2": "2) Quality Check",
+            "title3": "3) Customer Feedback"
           },
           "element": {
             "element1": "We believe that a synergistic partnership is the foundation of long-term success.\nWe'd like to collaborate with like-minded suppliers, building mutually beneficial relationships.",

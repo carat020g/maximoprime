@@ -48,12 +48,17 @@ function updateHowWeWorkPageContent(languageData) {
     document.getElementById('businessType').textContent = languageData.howWeWork.businesstype;
     document.getElementById('header1').textContent = languageData.howWeWork.header.header1;
     document.getElementById('context1').textContent = languageData.howWeWork.context.context1;
+ 
     document.getElementById('header2').textContent = languageData.howWeWork.header.header2;
-    document.getElementById('element1').textContent = languageData.howWeWork.context.context2.element1;
-    document.getElementById('element2').textContent = languageData.howWeWork.context.context2.element2;
-    document.getElementById('element3').textContent = languageData.howWeWork.context.context2.element3;
-    document.getElementById('element4').textContent = languageData.howWeWork.context.context2.element4;
+    document.getElementById('item1').textContent = languageData.howWeWork.context.context2.element1;
+    document.getElementById('item2').textContent = languageData.howWeWork.context.context2.element2;
+    document.getElementById('item3').textContent = languageData.howWeWork.context.context2.element3;
+    document.getElementById('item4').textContent = languageData.howWeWork.context.context2.element4;
+
     document.getElementById('header3').textContent = languageData.howWeWork.header.header3;
+    document.getElementById('title1').textContent = languageData.howWeWork.context.context3.title.title1;
+    document.getElementById('title2').textContent = languageData.howWeWork.context.context3.title.title2;
+    document.getElementById('title3').textContent = languageData.howWeWork.context.context3.title.title3;
     document.getElementById('element1').textContent = languageData.howWeWork.context.context3.element.element1;
     document.getElementById('element2').textContent = languageData.howWeWork.context.context3.element.element2;
     document.getElementById('element3').textContent = languageData.howWeWork.context.context3.element.element3;

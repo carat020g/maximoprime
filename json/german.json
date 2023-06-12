@@ -2,7 +2,7 @@
     "main": {
       "slogan": {
         "slogan1": "Wir liefern",
-        "slogan2": "Chancen"
+        "slogan2": "Chancen :>"
       },
       "language": {
         "english": "ENGLISCH",
@@ -29,16 +29,16 @@
       "context": {
         "context1": "Maximo Prime wurde mit einer einfachen Mission gegründet - außergewöhnliche Produkte mit anspruchsvollen Kunden zu verbinden.\nDieser Weg begann mit unserem echten Interesse, Werte aus verschiedenen kulturellen Hintergründen zu erkunden.\nWir glauben, dass das Handelsgeschäft über den reinen Kauf und Verkauf physischer Waren hinausgeht.\nEs beinhaltet den Austausch kultureller Kontexte und Erfahrungen.\nMit unserem Engagement für Exzellenz streben wir die besten Ergebnisse in dieser dynamischen Branche an.\nBegleiten Sie uns, während wir versteckte Chancen entdecken und unseren Kunden Zufriedenheit bieten.",
         "context2": {
-          "element1": "Werkzeuge & Heimwerker",
-          "element2": "Beauty und Körperpflege",
-          "element3": "Haushaltsartikel",
+          "element1": "1) Werkzeuge & Heimwerker",
+          "element2": "2) Beauty und Körperpflege",
+          "element3": "3) Haushaltsartikel",
           "element4": "Wir wählen sorgfältig Produkte aus, die dazu beitragen, das Leben der Menschen einfacher und komfortabler zu gestalten und ihr Gesamterlebnis zu verbessern."
         },
         "context3": {
           "title": {
-            "title1": "Partnerschaft",
-            "title2": "Qualitätskontrolle",
-            "title3": "Kundenfeedback"
+            "title1": "1) Partnerschaft",
+            "title2": "2) Qualitätskontrolle",
+            "title3": "3) Kundenfeedback"
           },
           "element": {
             "element1": "Wir glauben, dass eine synergistische Partnerschaft die Grundlage für langfristigen Erfolg bildet.\nWir möchten mit gleichgesinnten Lieferanten zusammenarbeiten und dabei gegenseitig vorteilhafte Beziehungen aufbauen.",

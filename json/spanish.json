@@ -2,7 +2,7 @@
     "main": {
       "slogan": {
         "slogan1": "Entregamos",
-        "slogan2": "Oportunidades"
+        "slogan2": "Oportunidades :>"
       },
       "language": {
         "english": "INGLÉS",
@@ -29,16 +29,16 @@
       "context": {
         "context1": "Maximo Prime se estableció con una misión simple: conectar productos excepcionales con clientes exigentes.\nEste viaje comenzó a partir de nuestro genuino interés en explorar valores de diferentes contextos culturales.\nCreemos que el comercio va más allá de comprar y vender productos físicos.\nInvolucra compartir contextos y experiencias culturales.\nCon nuestro compromiso con la excelencia, buscamos obtener los mejores resultados en esta industria dinámica.\nÚnete a nosotros mientras descubrimos oportunidades ocultas y brindamos satisfacción a nuestros clientes.",
         "context2": {
-          "element1": "Herramientas y mejoras para el hogar",
-          "element2": "Belleza y cuidado personal",
-          "element3": "Artículos esenciales para el hogar",
+          "element1": "1) Herramientas y mejoras para el hogar",
+          "element2": "2) Belleza y cuidado personal",
+          "element3": "3) Artículos esenciales para el hogar",
           "element4": "Seleccionamos cuidadosamente productos que contribuyen a hacer la vida de las personas más fácil y cómoda, mejorando su experiencia en general."
         },
         "context3": {
           "title": {
-            "title1": "Colaboración",
-            "title2": "Control de calidad",
-            "title3": "Opiniones de los clientes"
+            "title1": "1) Colaboración",
+            "title2": "2) Control de calidad",
+            "title3": "3) Opiniones de los clientes"
           },
           "element": {
             "element1": "Creemos que una colaboración sinérgica es la base del éxito a largo plazo.\nNos gustaría colaborar con proveedores afines, estableciendo relaciones mutuamente beneficiosas.",

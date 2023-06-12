@@ -18,4 +18,10 @@ function getSavedLanguageOption() {
     // Example using localStorage:
         localStorage.setItem('sideMenuOption', sideMenuId);
     }
+
+    function changeFont(fontClass) {
+      var contentElement = document.getElementById('content');
+      contentElement.className = fontClass;
+    }
+    
   

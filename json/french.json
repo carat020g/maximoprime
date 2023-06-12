@@ -2,7 +2,7 @@
     "main": {
       "slogan": {
         "slogan1": "Nous Livrons",
-        "slogan2": "Des Opportunités"
+        "slogan2": "Des Opportunités :>"
       },
       "language": {
         "english": "ANGLAIS",
@@ -29,16 +29,16 @@
       "context": {
         "context1": "Maximo Prime a été créé avec une mission simple : relier des produits exceptionnels à des clients exigeants.\nCe voyage a commencé par notre réel intérêt à explorer les valeurs de différentes cultures.\nNous pensons que le commerce va au-delà de l'achat et de la vente de produits physiques.\nIl s'agit de partager des contextes et des expériences culturelles.\nAvec notre engagement envers l'excellence, nous visons à obtenir les meilleurs résultats dans cette industrie dynamique.\nRejoignez-nous alors que nous découvrons des opportunités cachées et offrons satisfaction à nos clients.",
         "context2": {
-          "element1": "Outils et amélioration de la maison",
-          "element2": "Beauté et soins personnels",
-          "element3": "Articles ménagers",
+          "element1": "1) Outils et amélioration de la maison",
+          "element2": "2) Beauté et soins personnels",
+          "element3": "3) Articles ménagers",
           "element4": "Nous sélectionnons soigneusement des produits qui contribuent à rendre la vie des gens plus facile et confortable, améliorant ainsi leur expérience globale."
         },
         "context3": {
           "title": {
-            "title1": "Partenariat",
-            "title2": "Contrôle de la qualité",
-            "title3": "Retours clients"
+            "title1": "1) Partenariat",
+            "title2": "2) Contrôle de la qualité",
+            "title3": "3) Retours clients"
           },
           "element": {
             "element1": "Nous croyons qu'un partenariat synergique est la base du succès à long terme.\nNous souhaitons collaborer avec des fournisseurs partageant les mêmes valeurs, en construisant des relations mutuellement bénéfiques.",
