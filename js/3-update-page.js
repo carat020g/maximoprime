@@ -39,7 +39,7 @@ function updateSideMenuOptions(languageData){
     function updateMainPageContent(languageData) {
         // Update the main slogan
         document.getElementById('slogan1').textContent = languageData.main.slogan.slogan1;
-        document.getElementById('slogan2').textContent = languageData.main.slogan.slogan2;
+        // document.getElementById('slogan2').textContent = languageData.main.slogan.slogan2;
 
     }
     
