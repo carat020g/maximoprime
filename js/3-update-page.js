@@ -40,7 +40,6 @@ function updateSideMenuOptions(languageData){
         // Update the main slogan
         document.getElementById('slogan1').textContent = languageData.main.slogan.slogan1;
         // document.getElementById('slogan2').textContent = languageData.main.slogan.slogan2;
-
     }
     
 function updateHowWeWorkPageContent(languageData) {
