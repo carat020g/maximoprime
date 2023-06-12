@@ -76,6 +76,12 @@ header {
   height: auto; /* Maintain the aspect ratio */
 }
 
+.sns_images {
+  margin-top: 20px;
+  margin-left: 8px;
+  width: 24px;
+}
+
 
 .container {
     display: flex;
